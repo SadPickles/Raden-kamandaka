@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 76d5ac79827ad7f4787803a42826d11e
+  - enabled: 1
+    path: Assets/Scenes/Pajajaran.unity
+    guid: f729ce8f0e360bd4d941bb8afabc25a2
+  - enabled: 1
+    path: Assets/Scenes/Cutscene1.unity
+    guid: 0c47d428562532249ac18217cb1a66c0
+  - enabled: 1
+    path: Assets/Scenes/Gunung.unity
+    guid: 485eeb50699e6f340b1ce5abe6a60c98
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: c7747db606cad4c48a474ae708dc0d62
+  - enabled: 1
+    path: Assets/Scenes/Pasir.unity
+    guid: 13fea65f1f5e6224db0bc90938d477bc
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3.unity
+    guid: 2098d8e1e5c23bd4d960c68cb43917ef
+  - enabled: 1
+    path: Assets/Scenes/Malam.unity
+    guid: 052e5327320ccb545ae8f31b4c448ddd
+  - enabled: 1
+    path: Assets/Scenes/Cutscene4.unity
+    guid: 46ffdbbe2ada4134091ce5005de0e68e
+  - enabled: 0
+    path: Assets/Scenes/Desa.unity
+    guid: 7dc367a512f2a2f45a2902623e58ceb6
+  m_configObjects: {}

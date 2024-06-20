@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Teleporter
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ground
+  - Water
+  - UI
+  - Prop
+  - Enemy
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 172508493
+    locked: 0
+  - name: Decor
+    uniqueID: 2202980211
+    locked: 0
+  - name: prop
+    uniqueID: 1420712103
+    locked: 0
+  - name: Enemy
+    uniqueID: 1582493411
+    locked: 0
+  - name: NPC
+    uniqueID: 3643680337
+    locked: 0
+  - name: Player
+    uniqueID: 2414321291
+    locked: 0
+  - name: Tugu
+    uniqueID: 1139664949
+    locked: 0
