@@ -443,11 +443,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2555014225740640890}
     - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portraitImage
+      value: 
+      objectReference: {fileID: 582827106}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 1652905732628663736}
     - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
       propertyPath: speaker.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.size
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
@@ -494,6 +502,46 @@ PrefabInstance:
       propertyPath: speaker.Array.data[9]
       value: BanyakCatra
       objectReference: {fileID: 0}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[0]
+      value: 
+      objectReference: {fileID: -472754137, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[1]
+      value: 
+      objectReference: {fileID: 1063087644, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[2]
+      value: 
+      objectReference: {fileID: -472754137, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[3]
+      value: 
+      objectReference: {fileID: 1063087644, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[4]
+      value: 
+      objectReference: {fileID: -472754137, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[5]
+      value: 
+      objectReference: {fileID: 1063087644, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[6]
+      value: 
+      objectReference: {fileID: -472754137, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[7]
+      value: 
+      objectReference: {fileID: 1063087644, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[8]
+      value: 
+      objectReference: {fileID: -472754137, guid: 5600622786312d84facae702102abb3c, type: 3}
+    - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
+      propertyPath: portrait.Array.data[9]
+      value: 
+      objectReference: {fileID: 1063087644, guid: 5600622786312d84facae702102abb3c, type: 3}
     - target: {fileID: 3819439497650315660, guid: da62ef8ff37301445ab75e3eaffa0c1e, type: 3}
       propertyPath: audioClips.Array.data[0]
       value: 
@@ -1506,6 +1554,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526332732}
   m_CullTransparentMesh: 1
+--- !u!114 &582827106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 360939262225684634, guid: 3348c004c2b8507438e049cab17c607d, type: 3}
+  m_PrefabInstance: {fileID: 3069207582355460619}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &593779992
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4087,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3608005553147571387, guid: 1040ab3e062573c4782d4f466c6f25bb, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: a2fba53298257e84ba97959059868eae, type: 2}
     - target: {fileID: 3807492849904218454, guid: 1040ab3e062573c4782d4f466c6f25bb, type: 3}
       propertyPath: m_SortingLayer
       value: 6
@@ -4376,6 +4439,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111459371664081758, guid: 02f064f214f889746bf5ed9f65e1b108, type: 3}
+      propertyPath: Priority
+      value: 217
+      objectReference: {fileID: 0}
+    - target: {fileID: 111459371664081758, guid: 02f064f214f889746bf5ed9f65e1b108, type: 3}
+      propertyPath: m_Volume
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 111459371664081758, guid: 02f064f214f889746bf5ed9f65e1b108, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: a2fba53298257e84ba97959059868eae, type: 2}
     - target: {fileID: 763800638777296962, guid: 02f064f214f889746bf5ed9f65e1b108, type: 3}
       propertyPath: m_Name
       value: Torch Preb

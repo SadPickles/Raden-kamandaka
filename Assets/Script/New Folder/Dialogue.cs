@@ -12,9 +12,13 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text speakerText;
     [SerializeField] private TMP_Text dialogueText;
 
+    [SerializeField] private Image portraitImage;
+
     [SerializeField] private string[] speaker;
 
     [SerializeField][TextArea] private string[] dialogueWords;
+
+    [SerializeField] private Sprite[] portrait;
 
     private bool dialogueActivated;
     private int step;
@@ -49,8 +53,18 @@ public class Dialogue : MonoBehaviour
             }
             else
             {
-                speakerText.text = speaker[step];
-                dialogueText.text = dialogueWords[step];
+                if (speakerText != null)
+                {
+                    speakerText.text = speaker[step];
+                }
+                if (dialogueText != null)
+                {
+                    dialogueText.text = dialogueWords[step];
+                }
+                if (portraitImage != null)
+                {
+                    portraitImage.sprite = portrait[step];
+                }
                 step += 1;
             }
         }
@@ -61,18 +75,40 @@ public class Dialogue : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             dialogueActivated = true;
-            playerController.enabled = false;
-            playerCombat.enabled = false;
+            if (playerController != null)
+            {
+                playerController.enabled = false;
+            }
+            if (playerCombat != null)
+            {
+                playerCombat.enabled = false;
+            }
             Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
             if (playerRigidbody != null)
             {
                 playerRigidbody.velocity = Vector2.zero;
             }
-            dialogueCanvas.SetActive(true);
+            if (dialogueCanvas != null)
+            {
+                dialogueCanvas.SetActive(true);
+            }
             step = 0;
-            speakerText.text = speaker[step];
-            dialogueText.text = dialogueWords[step];
-            playerAnimator.SetBool("IsIdle", true);
+            if (speakerText != null)
+            {
+                speakerText.text = speaker[step];
+            }
+            if (dialogueText != null)
+            {
+                dialogueText.text = dialogueWords[step];
+            }
+            if (portraitImage != null)
+            {
+                portraitImage.sprite = portrait[step];
+            }
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetBool("IsIdle", true);
+            }
         }
     }
 
@@ -104,16 +140,33 @@ public class Dialogue : MonoBehaviour
 
     private void DisableDialogue()
     {
-        dialogueCanvas.SetActive(false);
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.SetActive(false);
+        }
         step = 0;
-        playerController.enabled = true;
-        playerCombat.enabled = true;
-        boxCollider.enabled = false;
-        playerAnimator.SetBool("IsIdle", false);
+        if (playerController != null)
+        {
+            playerController.enabled = true;
+        }
+        if (playerCombat != null)
+        {
+            playerCombat.enabled = true;
+        }
+        if (boxCollider != null)
+        {
+            boxCollider.enabled = false;
+        }
+        if (playerAnimator != null)
+        {
+            playerAnimator.SetBool("IsIdle", false);
+        }
     }
-
     private void LoadNextScene()
     {
-        SceneManager.LoadScene(nextScene);
+        if (!string.IsNullOrEmpty(nextScene))
+        {
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }
